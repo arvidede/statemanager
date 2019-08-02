@@ -6,7 +6,6 @@ import { Header, Input } from './components/'
 
 const ROOTSTATE = {
     title: 'Statemanager 2000X',
-    title2: 'The State'
 }
 
 class App extends Component {
@@ -26,18 +25,11 @@ class App extends Component {
             >
                 <div className="App">
                     <Header />
-                    <Header2 />
                     <Input />
                 </div>
             </StateContext.Provider>
         )
     }
 }
-
-export const Header2 = withState(({ rootState }) => {
-    const { title2 } = rootState
-    return <header>{title2}</header>
-})
-
 
 export default App
