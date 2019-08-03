@@ -4,7 +4,7 @@ class Reducer {
     }
 
     handleAction = (type, payload, state) => {
-        this.setState({ [type]: payload })
+        this.setState({ ...state, [type]: payload })
     }
 }
 
